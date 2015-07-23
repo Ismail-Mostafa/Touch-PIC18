@@ -1,0 +1,21 @@
+main
+	__CC2DW
+	config
+	flash
+	UART1_Init
+	UART1_Write_Text
+		UART1_Write
+	touch
+		ADC_Read
+			Delay_22us
+		Div_16x16_U
+	IntToStr
+		WordToStr
+			Div_16x16_U
+	UART1_Write
+	get_touch
+		touch
+			ADC_Read
+				Delay_22us
+			Div_16x16_U
+	led
